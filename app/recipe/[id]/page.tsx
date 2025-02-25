@@ -10,6 +10,7 @@ import { getRecipeObjectByIdOrNull } from "@/app/src/utility/utils";
 import { Skeleton } from "@/app/src/components/ui/skeleton";
 import { Separator } from "@/app/src/components/ui/separator";
 import { getRecipeCollection } from "@/app/src/api/api";
+import NutritionInfo from "@/app/src/components/nutritioninfo";
 
 export default function RecipeDetailsPage() {
   const [activeRecipe, setActiveRecipe] = useState<any>(null);
@@ -144,6 +145,10 @@ export default function RecipeDetailsPage() {
               <p className={"font-light mt-2 text-sm"}>Easy</p>
             </div>
           </div>
+          <NutritionInfo
+            numServings={numServings}
+            setNumServings={setNumServings}
+          />
         </div>
 
         <div className={"flex flex-col"}>
