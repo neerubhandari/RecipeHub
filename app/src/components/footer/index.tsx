@@ -1,3 +1,5 @@
+import Logo from "../logo";
+
 interface AppFooterProps {}
 
 export default function AppFooter({}: AppFooterProps) {
@@ -5,6 +7,7 @@ export default function AppFooter({}: AppFooterProps) {
     <div className="bg-white border-t border-gray-200 py-8 text-center mt-96">
       <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-[5fr_3fr_3fr] gap-8">
         <div className="flex flex-col items-center justify-center">
+          <Logo />
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} RecipeHub. All rights reserved.
           </p>

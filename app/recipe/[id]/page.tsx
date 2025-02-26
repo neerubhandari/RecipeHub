@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { DotLoader } from "react-spinners";
@@ -16,7 +16,7 @@ export default function RecipeDetailsPage() {
   const [activeRecipe, setActiveRecipe] = useState<any>(null);
   const [numServings, setNumServings] = useState(1);
   const [fabricatedWaitRunning, setFabricatedWaitRunning] = useState(true);
-  // const navigate = useNavigate();
+  const router = useRouter();
   const { id } = useParams<{ id: any }>();
   console.log(id, "idneeru");
 
@@ -72,7 +72,7 @@ export default function RecipeDetailsPage() {
       <Button
         className={"w-fit absolute top-[85px] left-5"}
         size={"sm"}
-        // onClick={() => navigate(-1)}
+        onClick={() => router.back()}
       >
         <FaCaretLeft className={"mr-1.5"} />
         <span>Go Back</span>
