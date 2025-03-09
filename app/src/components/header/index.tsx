@@ -10,7 +10,7 @@ const Header = () => {
         <Logo />
       </div>
       <div>
-        <ul className="flex gap-7 cursor-pointer">
+        <ul className="flex gap-7 cursor-pointer font-semibold">
           <li>Home</li>
           <li>Recipes</li>
           <li>Contact</li>
