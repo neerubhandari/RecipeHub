@@ -10,9 +10,7 @@ export default function SearchBox() {
 
   return (
     <div className="relative w-full max-w-lg flex items-center gap-2">
-      {/* Search Box Wrapper */}
       <div className="relative flex-1">
-        {/* Search Icon */}
         <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">
           <svg
             className="w-5 h-5"
@@ -30,7 +28,6 @@ export default function SearchBox() {
           </svg>
         </div>
 
-        {/* Search Input */}
         <input
           onClick={handleSearch}
           type="text"
