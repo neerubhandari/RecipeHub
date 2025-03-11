@@ -1,6 +1,16 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+
 export default function SearchBox({ onClick, className }: any) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
   return (
     <div className={`${className} relative w-full  flex items-center gap-2`}>
       <div className="relative flex-1">
@@ -22,6 +32,7 @@ export default function SearchBox({ onClick, className }: any) {
         </div>
 
         <input
+          ref={inputRef}
           onClick={onClick}
           type="text"
           placeholder="Search any Recipe"
