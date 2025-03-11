@@ -18,7 +18,6 @@ export default function RecipeDetailsPage() {
   const [fabricatedWaitRunning, setFabricatedWaitRunning] = useState(true);
   const router = useRouter();
   const { id } = useParams<{ id: any }>();
-  console.log(id, "idneeru");
 
   const [recipeCollection, setRecipeCollection] = useState([]);
 
