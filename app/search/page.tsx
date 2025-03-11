@@ -6,6 +6,7 @@ export default function SearchRecipe() {
     <>
       <div className="max-w-[1440px] px-[20px]">
         <Header />
+
         <SearchRecipeCard />
       </div>
     </>

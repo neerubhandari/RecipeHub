@@ -5,8 +5,8 @@ import SearchBox from "../searchbox";
 const SearchRecipeCard = () => {
   const handleSearchRecipe = () => {};
   return (
-    <div>
-      <SearchBox onClick={handleSearchRecipe} />
+    <div className=" flex justify-center w-[100%] ">
+      <SearchBox onClick={handleSearchRecipe} className={"max-w-5xl"} />
     </div>
   );
 };

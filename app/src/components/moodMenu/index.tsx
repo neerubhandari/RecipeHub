@@ -9,7 +9,7 @@ const MoodMenu = () => {
         Tell us what you're craving ? Select your current mood from below
         options , we will find you the recipe that speaks to your cravings
       </div>
-      <SearchBox />
+      <SearchBox className={"max-w-lg"} />
     </div>
   );
 };
