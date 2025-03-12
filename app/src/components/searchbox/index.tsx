@@ -2,7 +2,12 @@
 
 import { useEffect, useRef } from "react";
 
-export default function SearchBox({ onClick, className }: any) {
+export default function SearchBox({
+  onClick,
+  className,
+  inputValue,
+  onChange,
+}: any) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -34,6 +39,8 @@ export default function SearchBox({ onClick, className }: any) {
         <input
           ref={inputRef}
           onClick={onClick}
+          value={inputValue}
+          onChange={onChange}
           type="text"
           placeholder="Search any Recipe"
           className=" w-full rounded-lg border border-gray-300 bg-white py-2 pl-10 pr-4 text-gray-700 shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-400 focus:outline-none"
