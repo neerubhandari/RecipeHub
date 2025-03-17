@@ -37,7 +37,7 @@ const SearchRecipeCard = () => {
           : searchQuery && (
               <p className="text-gray-500 mt-4">No recipes found.</p>
             )}
-        {/* White Gradient at the Bottom */}
+
         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" />
       </div>
     </div>
