@@ -5,7 +5,7 @@ import Logo from "../logo";
 
 const Header = () => {
   return (
-    <div className="flex justify-between py-12">
+    <div className="flex justify-between p-12">
       <div>
         <Logo />
       </div>
