@@ -7,6 +7,7 @@ export default function SearchBox({
   className,
   inputValue,
   onChange,
+  backgroundColor,
 }: any) {
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -48,7 +49,9 @@ export default function SearchBox({
       </div>
 
       {/* Search Button */}
-      <button className="px-4 py-2 text-lg  bg-[#FF7F50] text-white rounded-lg shadow hover:bg-blue-600 transition">
+      <button
+        className={`${backgroundColor} px-4 py-2 text-lg  bg-[#FF7F50] text-white rounded-lg shadow hover:bg-blue-600 transition`}
+      >
         Search
       </button>
     </div>
