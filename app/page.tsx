@@ -7,7 +7,7 @@ import Recipes from "./src/components/recipies";
 
 export default function Home() {
   return (
-    <div className="max-w-[1440px]">
+    <div className="max-w-[1440px] mx-auto">
       <Header />
       <Banner />
       <div className="mt-20">
